@@ -12,9 +12,8 @@ file_clean["Sex"] = file_clean["Sex"].map({"male": 0, "female" : 1})
 predict = file_clean[["Age", "Pclass", "Sex"]]
 results = file_clean["Survived"]
 
-
+# tuning the model using cross valodation and plotting the graph
 from sklearn.metrics import accuracy_score
-import seaborn as sb
 import matplotlib.pyplot as plt
 scores = []
 k_s = []
