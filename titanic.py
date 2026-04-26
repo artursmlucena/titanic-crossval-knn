@@ -13,7 +13,6 @@ predict = file_clean[["Age", "Pclass", "Sex"]]
 results = file_clean["Survived"]
 
 # tuning the model using cross valodation and plotting the graph
-from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 scores = []
 k_s = []
